@@ -108,7 +108,7 @@ let mobile = false
    },[]);
 
   useEffect(() => {
-      socket.current = io("ws://dreamweb.runflare.run:27017")
+      socket.current = io("ws://dreamweb.runflare.run")
       socket.current.on("getMessage" , data => {
           setArrivalMessage({
               sender:data.senderId,

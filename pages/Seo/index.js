@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 export async function getStaticProps() {
 
-    const res = await fetch('http://dreamweb.runflare.runallRoutes/articles')
+    const res = await fetch('http://dreamweb.runflare.run/allRoutes/articles')
     const json = await res.json()
 
     const resSeo = await fetch('http://dreamweb.runflare.run/allRoutes/Seo/seo')

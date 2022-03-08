@@ -13,7 +13,7 @@ app.prepare().then(() => {
    server.use(express.json())
 
 server.get('*', (req,res) => {
-   return handle(req,res)
+  return handle(req,res)
 })
 
 const PORT = process.env.PORT || 27017

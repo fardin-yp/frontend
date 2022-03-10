@@ -11,7 +11,8 @@ import Image from 'next/image';
 export async function getStaticProps() {
 
 
-  const json = process.env.INVIS_CAPTCHA || null
+//   const json = process.env.INVIS_CAPTCHA || null
+const json = "6LfMd88dAAAAANh6pGI5JNg-q4m3gkwi8BlYKmHo"
   const resSeo = await fetch('http://dreamweb.runflare.run/allRoutes/Seo/contact');
   const jsonSeo = await resSeo.json();
 

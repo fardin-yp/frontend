@@ -61,6 +61,7 @@ useEffect(() => {
                     <a href="/exclusive-website">خرید سایت اختصاصی</a>
                     <a href="/exclusive-website/request">درخواست طراحی سایت</a>
                     <a href="/articles"> آموزش ها و مقالات</a>
+                    <a href="/contact-us"> ارتباط با ما</a>
               </div>
 
               <div className="top-con">

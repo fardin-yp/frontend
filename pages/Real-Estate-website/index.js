@@ -1,5 +1,5 @@
 import Navbar from "../../components/navbar/navbar";
-import Footer from '../../components/footer/footer';
+import Footer from '../../components/Footer/Footer';
 import LiveChat from '../../components/liveChat/liveChat';
 import NoPost from '../../components/NoPost/NoPost';
 import Head from 'next/head';

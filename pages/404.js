@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar/navbar"
-import Footer from "../components/Footer/footer"
+import Footer from "../components/footer/footer"
 
 const Err = () => {
     return (

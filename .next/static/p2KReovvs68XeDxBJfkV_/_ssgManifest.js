@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002FAuth\u002Fforget-Password","\u002FReal-Estate-website","\u002FSeo","\u002Fcontact-us","\u002Fexclusive-website","\u002F","\u002Fmedical-website","\u002Fcompany-website","\u002Fnews-website","\u002Fpersonal-website","\u002Fresturant-website","\u002Fshop-website","\u002Farticles"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

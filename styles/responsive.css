@@ -359,7 +359,8 @@
     .exclusive form button {
         margin-top: 10px;
         width: 55%;
-        padding: 10px 25px;
+        font-size:14px;
+        padding: 10px 15px;
     } 
     .exclusive form h1 {
         height: 20px;

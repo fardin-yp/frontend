@@ -5,7 +5,7 @@ const NoPost = ({name ,background}) => {
         <div>
             <div style={{marginBottom:"-300px" ,marginTop:"5px"}} className="err-card">
                <img src="/images/404.gif" alt=""  />
-               <p>متاسفانه هیچ وبسایت {name} برای فروش وجود ندارد!!</p>
+               <p style={{padding:"15px"}}>متاسفانه هیچ وبسایت {name} برای فروش وجود ندارد!!</p>
                <a style={{background:background}} href="/">بازگشت به صفحه اصلی</a>
             </div>
         </div>

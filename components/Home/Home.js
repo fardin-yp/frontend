@@ -23,7 +23,7 @@ const Home = ({json ,articles ,Questions ,links}) => {
         reRef.current.reset()
 
     const post = {number ,name ,captcha}
-    await axios.post('http://dreamweb.runflare.run/allRoutes/consulting' ,post).then(res => {
+    await axios.post('https://dreamweb.runflare.run/allRoutes/consulting' ,post).then(res => {
     if(res.data.errMessage){
     setErrMessage(res.data.errMessage)
     setLoading(false)

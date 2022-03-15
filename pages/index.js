@@ -6,13 +6,13 @@ import LiveChat from '../components/liveChat/liveChat';
 export async function getStaticProps() {
 
     const recaptcha = process.env.INVIS_CAPTCHA || null
-    const res = await fetch(`http://dreamweb.runflare.run/allRoutes/articles`);
+    const res = await fetch(`https://dreamweb.runflare.run/allRoutes/articles`);
     const json = await res.json();
 
-    const resSeo = await fetch('http://dreamweb.runflare.run/allRoutes/Seo/home');
+    const resSeo = await fetch('https://dreamweb.runflare.run/allRoutes/Seo/home');
     const jsonSeo = await resSeo.json();
 
-    const getLinks = await fetch(`http://dreamweb.runflare.run/allRoutes/Links`)
+    const getLinks = await fetch(`https://dreamweb.runflare.run/allRoutes/Links`)
      const links = await getLinks.json()
        
 

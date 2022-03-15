@@ -11,6 +11,7 @@ class MyDocument extends Document {
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
         <link rel="apple-touch-icon" href="/example.png" />
         <meta name="theme-color" content="#0d2040"/>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         </Head>
         <body>
           <Main />

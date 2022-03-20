@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
     }
   }
 
-  const usersloggedIn = await fetch("https://dreamweb.runflare.run/authentication/find",{
+  const usersloggedIn = await fetch("http://dreamweb.runflare.run/authentication/find",{
     credentials: "include",
     headers:{
       cookie:context.req.cookies.token
@@ -68,7 +68,7 @@ const login = async (e) => {
      const post  = {email ,password ,captcha};
      const Apost = {email ,password}
      try{
-        await axios.post('https://dreamweb.runflare.run/authentication/login' , post ,{withCredentials:true}).then(res => {
+        await axios.post('http://dreamweb.runflare.run/authentication/login' , post ,{withCredentials:true}).then(res => {
           if(res.data.errMessage){
             setError(res.data.errMessage)
             setLoading(false);
@@ -87,7 +87,7 @@ const login = async (e) => {
         setLoading(false)   
       }
       try{
-        await axios.post('https://dreamweb.runflare.run/auth/login' , Apost ,{withCredentials:true}).then(res => {
+        await axios.post('http://dreamweb.runflare.run/auth/login' , Apost ,{withCredentials:true}).then(res => {
           if(!res.data.errMessage){
             window.location = '/Admin'
           }

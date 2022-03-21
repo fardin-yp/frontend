@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 export async function getServerSideProps(context) {
 
   const con = context.params.items;
-  const reCaptcha = process.env.VISIB_CAPTCHA || null;
+  const json = "6LfMd88dAAAAANh6pGI5JNg-q4m3gkwi8BlYKmHo" ;
   const findPost = await fetch(`http://dreamweb.runflare.run/allRoutes/fullPost/${con}`,{method:'GET'});
   const json = await findPost.json();
 

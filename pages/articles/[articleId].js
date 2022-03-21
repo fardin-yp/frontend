@@ -17,7 +17,7 @@ export async function getServerSideProps(context) {
   const res = await fetch('http://dreamweb.runflare.run/allRoutes/fullArticle/' + con)
   const json = await res.json();
 
-  const reCaptcha = process.env.VISIB_CAPTCHA || null;
+  const reCaptcha ="6Lc5scwdAAAAABhLprESfkYx74BP2mEGvh9Ck01p";
 
   if(!json.title){
     return {

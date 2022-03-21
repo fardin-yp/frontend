@@ -51,7 +51,7 @@ const index = ({json ,jsonSeo ,links}) => {
         reRef.current.reset();
         const ex = {email ,message ,name ,des ,captcha};
         try {
-            await axios.post('http://dreamweb.runflare.run/allRoutes/contact' ,ex).then(res => {
+            await axios.post('https://dreamweb.runflare.run/allRoutes/contact' ,ex).then(res => {
               if(res.data.errMessage){
                   setErr(res.data)
                   setLoading(false)

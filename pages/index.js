@@ -5,7 +5,7 @@ import LiveChat from '../components/liveChat/liveChat';
 
 export async function getStaticProps() {
 
-    const recaptcha = process.env.INVIS_CAPTCHA || null
+  const json = "6LfMd88dAAAAANh6pGI5JNg-q4m3gkwi8BlYKmHo" ;
     const res = await fetch(`http://dreamweb.runflare.run/allRoutes/articles`);
     const json = await res.json();
 

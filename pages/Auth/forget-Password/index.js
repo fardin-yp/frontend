@@ -7,7 +7,7 @@ import Head from 'next/head';
 export async function getStaticProps() {
 
 
-  const json = process.env.INVIS_CAPTCHA || null
+  const json = "6LfMd88dAAAAANh6pGI5JNg-q4m3gkwi8BlYKmHo" ;
   
   return {
     props:{

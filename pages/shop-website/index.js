@@ -22,6 +22,15 @@ export async function getStaticProps() {
 }
 
 const index = ({posts ,jsonSeo}) => {
+  
+  
+    const paying = async (e) => {
+       e.preventDefault()
+      const Post = {amount:parseInt(post.price) , description:post.name ,callback_url:"http://localhost:3000/buyComplete/",merchant_id:"d164f627-0400-4dc5-8da5-bc166ee30553"}
+       await axios.post(`https://sandbox.zarinpal.com/pg/v4/payment/request.json/pay` ,Post ,{withCredentials:true}).then(res => {
+         console.log(res.data)
+       })
+    }
 
     return (
         <div className="layout">
@@ -47,7 +56,7 @@ const index = ({posts ,jsonSeo}) => {
               <div className="shop">
                 <div className="shop-con" >
                   {posts && posts.findPost.map(res => {
-                  return <a href={`/fb/${res._id}`} key={res._id}>
+                  return <a onClick={paying} key={res._id}>
                     <img src={`/uploads/${res.image}`} alt={res.image} />
                     <h1> {res.name}</h1>
                     <p style={{fontSize:"17px"}}>قیمت {res.price} تومان</p>
